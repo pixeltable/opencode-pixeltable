@@ -137,7 +137,7 @@ npm run build
 npm test
 ```
 
-The package entry OpenCode loads is `src/index.ts`. `npm run build` typechecks an emit to `dist/` and does not change that entry.
+The package entry OpenCode loads is `index.ts`, which forwards to `src/index.ts`. The root entry also lets OpenCode v2 discover a local checkout directory. `npm run build` typechecks an emit to `dist/` and does not change that entry.
 
 ## Links
 

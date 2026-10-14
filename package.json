@@ -21,10 +21,11 @@
     "multimodal"
   ],
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./index.ts"
   },
-  "main": "./src/index.ts",
+  "main": "./index.ts",
   "files": [
+    "index.ts",
     "src",
     "skills",
     "LICENSE",
