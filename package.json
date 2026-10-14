@@ -1,0 +1,49 @@
+{
+  "name": "opencode-pixeltable",
+  "version": "0.1.0",
+  "description": "OpenCode plugin that connects Pixeltable: the developer MCP server and the Pixeltable skill.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixeltable/opencode-pixeltable.git"
+  },
+  "homepage": "https://github.com/pixeltable/opencode-pixeltable",
+  "bugs": {
+    "url": "https://github.com/pixeltable/opencode-pixeltable/issues"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "pixeltable",
+    "mcp",
+    "skill",
+    "multimodal"
+  ],
+  "exports": {
+    ".": "./index.ts"
+  },
+  "main": "./index.ts",
+  "files": [
+    "index.ts",
+    "src",
+    "skills",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "opencode": "^1.18.29 || ^2.0.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "node --experimental-strip-types --test test/**/*.test.ts"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.18.29",
+    "@opencode/plugin": "^2.0.23",
+    "@opencode/schema": "^2.0.23",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0"
+  }
+}
